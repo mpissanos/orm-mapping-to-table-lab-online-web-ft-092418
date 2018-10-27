@@ -11,7 +11,7 @@ class Student
   
   def self.create_table
     sql =  <<-SQL 
-      CREATE TABLE IF NOT EXISTS songs (
+      CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY, 
         name TEXT, 
         grade INTEGER
@@ -21,7 +21,8 @@ class Student
   end
   
   def self.drop_table
-    sql = 
+    sql = <<-SQL
+      DROP TABLE students
         
 
   # Remember, you can access your database connection anywhere in this class
